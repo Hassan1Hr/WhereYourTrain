@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Know Your Train</string>
+    <string name="from">من</string>
+    <string name="to">الى</string>
+    <string name="toggle_stations_description">toggle station</string>
+    <string name="station_from_hint">هتركب من محطة ايه</string>
+    <string name="station_to_hint">عايز توصل محطة ايه</string>
+    <string name="go">بحث</string>
+</resources>
