@@ -1,4 +1,4 @@
-package com.example.hassan.know_your_train;
+package com.example.hassan.know_your_train.activities;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.hassan.know_your_train.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

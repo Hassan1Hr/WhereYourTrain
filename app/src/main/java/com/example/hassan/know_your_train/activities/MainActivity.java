@@ -1,4 +1,4 @@
-package com.example.hassan.know_your_train;
+package com.example.hassan.know_your_train.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.support.design.widget.TextInputLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.hassan.know_your_train.R;
 import com.example.hassan.know_your_train.custom_views.InstantAutoCompleteTextView;
 import com.example.hassan.know_your_train.database.Db;
 import com.example.hassan.know_your_train.model.Station;

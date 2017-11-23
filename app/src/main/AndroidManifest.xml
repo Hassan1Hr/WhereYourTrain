@@ -10,13 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.hassan.know_your_train.activities.LoginActivity" android:theme="@style/AppTheme.Dark" />
+        <activity android:name="com.example.hassan.know_your_train.activities.SignupActivity" android:theme="@style/AppTheme.Dark" />
+
     </application>
 
 </manifest>
