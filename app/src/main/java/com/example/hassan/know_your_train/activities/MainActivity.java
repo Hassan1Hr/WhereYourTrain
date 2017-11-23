@@ -1,7 +1,9 @@
 package com.example.hassan.know_your_train;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.support.design.widget.TextInputLayout;
@@ -40,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        initializeData();
+
+    }
+
+    private void initializeData() {
+
 
         ArrayList<Station> stations = Db.getStations(this);
 
@@ -50,5 +58,14 @@ public class MainActivity extends AppCompatActivity {
         mStartAutocomplete.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, stationNames));
         mArrivalAutocomplete.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, stationNames));
 
+        mGoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                startActivity(intent);
+                finish();
+                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+            }
+        });
     }
 }
