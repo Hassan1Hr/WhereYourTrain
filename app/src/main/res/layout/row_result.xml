@@ -12,7 +12,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/duration"
+        android:id="@+id/trainName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawablePadding="10dp"
@@ -52,7 +52,7 @@
         android:textAlignment="viewStart"
         android:textColor="@color/textGrey"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/journey_planner_changes_bar"
+        app:layout_constraintBottom_toBottomOf="@+id/tripTime"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Cairo" />
 
@@ -81,12 +81,12 @@
         android:textAlignment="viewStart"
         android:textColor="@color/textGrey"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/journey_planner_changes_bar"
+        app:layout_constraintBottom_toBottomOf="@+id/tripTime"
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="Alexandria"/>
 
     <TextView
-        android:id="@+id/journey_planner_changes_bar"
+        android:id="@+id/tripTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawablePadding="10dp"
@@ -96,7 +96,7 @@
         android:textSize="13sp"
         app:layout_constraintEnd_toStartOf="@+id/arrivalStationName"
         app:layout_constraintStart_toEndOf="@+id/startStationName"
-        app:layout_constraintTop_toBottomOf="@+id/duration"
+        app:layout_constraintTop_toBottomOf="@+id/trainName"
         android:drawableStart="@drawable/ic_access_time_black_24dp"
         tools:text="4 hrs 36 mins">
     </TextView>

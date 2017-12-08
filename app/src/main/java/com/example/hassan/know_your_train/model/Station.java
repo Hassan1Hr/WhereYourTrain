@@ -13,10 +13,10 @@ import com.google.auto.value.AutoValue;
 public abstract class Station implements Parcelable {
     public abstract String id();
 
-    public abstract String stationName();
-
     public abstract String stationArabic();
 
-    public static Station create(String id, String stationName, String stationArabic) {return new AutoValue_Station(id, stationName, stationArabic);}
+    public abstract String stationAriveTime();
+
+    public static Station create(String id, String stationArabic, String stationAriveTime) {return new AutoValue_Station(id,  stationArabic, stationAriveTime);}
 
 }

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    package="com.example.hassan.know_your_train"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hassan.know_your_train">
 
     <application
         android:allowBackup="true"
@@ -17,9 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.hassan.know_your_train.activities.LoginActivity" android:theme="@style/AppTheme.Dark" />
-        <activity android:name="com.example.hassan.know_your_train.activities.SignupActivity" android:theme="@style/AppTheme.Dark" />
-
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".activities.SignupActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity android:name=".activities.ResultActivty"></activity>
     </application>
 
 </manifest>
