@@ -59,14 +59,11 @@ public class MainActivity extends AppCompatActivity {
         mStartAutocomplete.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, stationNames));
         mArrivalAutocomplete.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, stationNames));
 
-        mGoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
-                startActivity(intent);
-                finish();
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-            }
+        mGoButton.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(),ResultActivty.class);
+            startActivity(intent);
+            finish();
+            overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
         });
     }
 }
