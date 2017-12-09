@@ -34,6 +34,7 @@ public class ResultActivty extends AppCompatActivity {
         mTrain.add(Train.create(6334L,2012,"VIP","القاهرة","الاقصر","١٤ ساعة"));
         mTrain.add(Train.create(59834L,988,"مكيف","القاهرة","الاقصر","١٥ ساعة"));
         mTrain.add(Train.create(59834L,2009,"VIP","القاهرة","الاقصر","١٥ ساعة"));
+        mTrain.add(Train.create(59834L,1907,"مكيف","اسيوط","الاقصر","١٥ ساعة"));
 
         mAdapter = new TrainResultAdapter(this,mTrain);
         LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(this);
